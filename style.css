@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('fundo.png'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0; /* Diminuída a altura da aba superior */
+    z-index: 10;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    gap: 300px; /* Ajustado o espaço entre as abas */
+}
+
+.tab {
+    padding: 8px 16px; /* Ajustado o padding */
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tab:hover {
+    background-color: #333;
+}
+
+.content {
+    width: 80%;
+    max-width: 800px; /* Limita a largura do quadrado preto principal */
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 60px auto; /* Ajuste a margem superior para mover o quadrado para baixo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 400px; /* Ajuste a altura conforme necessário */
+}
+
+.title {
+    font-size: 2em; /* Aumenta o tamanho do título "Produtos" */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rectangles {
+    display: flex;
+    justify-content: space-between; /* Ajustado para distribuir os retângulos igualmente */
+    width: 100%;
+    gap: 5px; /* Reduzido o espaço entre os retângulos */
+}
+
+.rectangle {
+    background-color: black;
+    border: 2px solid white; /* Aumenta a espessura da borda dos retângulos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Ajusta o padding para aumentar o tamanho do retângulo */
+    height: 330px; /* Ajusta a altura dos retângulos */
+    flex: 1; /* Permite que os retângulos ocupem espaço igualmente */
+    max-width: 250px; /* Ajusta a largura máxima dos retângulos */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+.circle {
+    width: 100px; /* Ajusta o tamanho da bola */
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Diminuído o espaço abaixo da bola */
+}
+
+.circle img {
+    width: 80px; /* Ajusta o tamanho da imagem dentro da bola */
+    height: 80px;
+    border-radius: 50%;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center; /* Centraliza o texto dentro dos retângulos */
+}
+
+.product-title {
+    font-size: 1.2em; /* Ajusta o tamanho do título do produto */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 1em; /* Ajusta o tamanho da descrição */
+    margin-bottom: 10px;
+    line-height: 1.4;
+    max-height: 80px; /* Ajusta a altura máxima da descrição */
+    overflow: hidden; /* Remove as barras de rolagem */
+}
+
+.view-product {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.view-product:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    padding: 10px 0; /* Diminuída a altura da aba inferior */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+.store-name {
+    color: white;
+    font-size: 1em; /* Ajusta o tamanho da fonte da loja */
+    font-weight: bold;
+}
+
+.footer-fixed {
+    width: 100%;
+    background-color: black;
+    padding: 10px 0; /* Diminuída a altura da aba inferior */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
